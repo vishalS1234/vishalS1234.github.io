@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User management - Check In Chick</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-container dashboard">
+        <aside class="sidebar">
+            <div class="sidebar-inner">
+                <div class="logo">
+                    <a href="dashboard.html"><img src="src/img/logo.svg" alt=""></a>
+                </div>
+
+                <div class="sidebar-links-wrap">
+                    <div class="sidebar-link">
+                        <a href="dashboard.html">
+                            <img src="src/img/home.svg" alt="home"></a>
+                    </div>
+
+                    <div class="sidebar-link">
+                        <a href="user-management.html">
+                            <img src="src/img/profile.svg" alt=""></a>
+                    </div>
+
+                    <div class="sidebar-link">
+                        <a href="Resource-management.html">
+                            <img src="src/img/store.svg" alt=""></a>
+                    </div>
+
+                    <div class="sidebar-link">
+                        <a href="">
+                            <img src="src/img/Light-Member.svg" alt=""></a>
+                    </div>
+
+                    <div class="sidebar-link">
+                        <a href="">
+                            <img src="src/img/inbox.svg" alt=""></a>
+                    </div>
+
+                    <div class="sidebar-link">
+                        <a href="static-content.html">
+                            <img src="src/img/about.svg" alt=""></a>
+                    </div>
+
+                    <div class="sidebar-link">
+                        <a href="">
+                            <img src="src/img/help.svg" alt=""></a>
+                    </div>
+                    <div class="sidebar-link">
+                        <a href="">
+                            <img src="src/img/Group 3297.svg" alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="log-out">
+                <div class="sidebar-link">
+                    <a href="dashboard.html">
+                        <img src="src/img/logout.svg" alt="home">
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="header">
+            <h1>User management</h1>
+            <div class="header-filter-wrapper filter-active">
+                <div class="filter-text">
+                    <p>Filter by</p>
+                </div>
+                <div class="filter-select-wrapper">
+                    <select name="" id="">
+                        <option value="">This Week</option>
+                        <option value="">This Week</option>
+                        <option value="">This Week</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="inner-main-container">
+
+            <div class="top-searchbar-wrap">
+                <input type="search" name="" id="" placeholder="Search user">
+            </div>
+            <div class="user-management">
+                <div class="user-accordion-section">
+                    <div class="user-accordion">
+                        <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="accordion-heading">Full Name <span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="6.126" height="4.088"
+                                                    viewBox="0 0 6.126 4.088">
+                                                    <g id="Group_2419" data-name="Group 2419"
+                                                        transform="translate(0 4.088) rotate(-90)">
+                                                        <path id="Path_3561" data-name="Path 3561"
+                                                            d="M1.315,3.064l.835.7q.87.725,1.739,1.449A.512.512,0,1,1,3.236,6Q1.713,4.731.193,3.462a.509.509,0,0,1,0-.8Q1.715,1.394,3.238.127a.512.512,0,1,1,.654.787Q2.641,1.959,1.388,3C1.366,3.019,1.345,3.039,1.315,3.064Z"
+                                                            fill="#2377bd" />
+                                                    </g>
+                                                </svg></span></div>
+                                    </th>
+                                    <th>
+                                        <div class="accordion-heading">Email <span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="6.126" height="4.088"
+                                                    viewBox="0 0 6.126 4.088">
+                                                    <g id="Group_2419" data-name="Group 2419"
+                                                        transform="translate(0 4.088) rotate(-90)">
+                                                        <path id="Path_3561" data-name="Path 3561"
+                                                            d="M1.315,3.064l.835.7q.87.725,1.739,1.449A.512.512,0,1,1,3.236,6Q1.713,4.731.193,3.462a.509.509,0,0,1,0-.8Q1.715,1.394,3.238.127a.512.512,0,1,1,.654.787Q2.641,1.959,1.388,3C1.366,3.019,1.345,3.039,1.315,3.064Z"
+                                                            fill="#2377bd" />
+                                                    </g>
+                                                </svg></span></div>
+                                    </th>
+                                    <th>
+                                        <div class="accordion-heading">Yob <span><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="6.126" height="4.088" viewBox="0 0 6.126 4.088">
+                                                    <g id="Group_2419" data-name="Group 2419"
+                                                        transform="translate(0 4.088) rotate(-90)">
+                                                        <path id="Path_3561" data-name="Path 3561"
+                                                            d="M1.315,3.064l.835.7q.87.725,1.739,1.449A.512.512,0,1,1,3.236,6Q1.713,4.731.193,3.462a.509.509,0,0,1,0-.8Q1.715,1.394,3.238.127a.512.512,0,1,1,.654.787Q2.641,1.959,1.388,3C1.366,3.019,1.345,3.039,1.315,3.064Z"
+                                                            fill="#2377bd" />
+                                                    </g>
+                                                </svg></span></div>
+                                    </th>
+                                    <th>
+                                        <div class="accordion-heading">Gender <span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="6.126" height="4.088"
+                                                    viewBox="0 0 6.126 4.088">
+                                                    <g id="Group_2419" data-name="Group 2419"
+                                                        transform="translate(0 4.088) rotate(-90)">
+                                                        <path id="Path_3561" data-name="Path 3561"
+                                                            d="M1.315,3.064l.835.7q.87.725,1.739,1.449A.512.512,0,1,1,3.236,6Q1.713,4.731.193,3.462a.509.509,0,0,1,0-.8Q1.715,1.394,3.238.127a.512.512,0,1,1,.654.787Q2.641,1.959,1.388,3C1.366,3.019,1.345,3.039,1.315,3.064Z"
+                                                            fill="#2377bd" />
+                                                    </g>
+                                                </svg></span></div>
+                                    </th>
+                                    <th>
+                                        <div class="accordion-heading">language <span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="6.126" height="4.088"
+                                                    viewBox="0 0 6.126 4.088">
+                                                    <g id="Group_2419" data-name="Group 2419"
+                                                        transform="translate(0 4.088) rotate(-90)">
+                                                        <path id="Path_3561" data-name="Path 3561"
+                                                            d="M1.315,3.064l.835.7q.87.725,1.739,1.449A.512.512,0,1,1,3.236,6Q1.713,4.731.193,3.462a.509.509,0,0,1,0-.8Q1.715,1.394,3.238.127a.512.512,0,1,1,.654.787Q2.641,1.959,1.388,3C1.366,3.019,1.345,3.039,1.315,3.064Z"
+                                                            fill="#2377bd" />
+                                                    </g>
+                                                </svg></span></div>
+                                    </th>
+                                    <th>
+                                        <div class="accordion-heading">Carer Type <span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="6.126" height="4.088"
+                                                    viewBox="0 0 6.126 4.088">
+                                                    <g id="Group_2419" data-name="Group 2419"
+                                                        transform="translate(0 4.088) rotate(-90)">
+                                                        <path id="Path_3561" data-name="Path 3561"
+                                                            d="M1.315,3.064l.835.7q.87.725,1.739,1.449A.512.512,0,1,1,3.236,6Q1.713,4.731.193,3.462a.509.509,0,0,1,0-.8Q1.715,1.394,3.238.127a.512.512,0,1,1,.654.787Q2.641,1.959,1.388,3C1.366,3.019,1.345,3.039,1.315,3.064Z"
+                                                            fill="#2377bd" />
+                                                    </g>
+                                                </svg></span></div>
+                                    </th>
+                                    <th>
+                                        <div class="accordion-heading">Action</div>
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr data-bs-toggle="collapse" data-bs-target="#r1">
+                                    <td>
+                                        <div class="full-name">
+                                            <div class="user-img">
+                                                <img src="src/img/Mask Group 79.png" alt="">
+                                            </div>
+                                            <p>Mary Brown</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p><a href="">Mary@gmail.com</a></p>
+                                    </td>
+                                    <td>
+                                        <p>1995</p>
+                                    </td>
+                                    <td>
+                                        <p>Female</p>
+                                    </td>
+                                    <td>
+                                        <p>Spanish, English</p>
+                                    </td>
+                                    <td>
+                                        <p>Married</p>
+                                    </td>
+                                    <td>
+                                        <div class="edit-dots-wrap">
+                                        <div class="edit-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>   
+                                        </div>
+                                        <div class="edit-dots-popup">
+                                            <a href="##">Block</a>
+                                            <a href="#">Delete</a>
+                                        </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="collapse accordion-collapse animated-collapse" id="r1" data-bs-parent=".user-accordion">
+                                    <td colspan="7" class="accordion-collapse-inner">
+                                        <table>
+                                           <thead>
+                                            <tr>
+                                                <th>Chick Type</th>
+                                                <th>What bring you here</th>
+                                                <th>I want to see</th>
+                                                <th>Match me based</th>
+                                                <th>Im looking for</th>
+                                            </tr>
+                                           </thead>
+                                           <tbody>
+                                            <tr>
+                                                <td><p>Newborn under 6 months</p></td>
+                                                <td><p>I want to see who’s up feeding when I am, just for fun.</p></td>
+                                                <td><p>Formula/Bottle feeding</p></td>
+                                                <td><p>My Age</p></td>
+                                                <td><p>Meet ups</p></td>
+                                            </tr>
+                                           </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <!-- row 2  -->
+                                <tr data-bs-toggle="collapse" data-bs-target="#r2">
+                                    <td>
+                                        <div class="full-name">
+                                            <div class="user-img">
+                                                <img src="src/img/Mask Group 79.png" alt="">
+                                            </div>
+                                            <p>Mary Brown</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p><a href="">Mary@gmail.com</a></p>
+                                    </td>
+                                    <td>
+                                        <p>1995</p>
+                                    </td>
+                                    <td>
+                                        <p>Female</p>
+                                    </td>
+                                    <td>
+                                        <p>Spanish, English</p>
+                                    </td>
+                                    <td>
+                                        <p>Married</p>
+                                    </td>
+                                    <td>
+                                        <div class="edit-dots-wrap">
+                                        <div class="edit-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>   
+                                        </div>
+                                        <div class="edit-dots-popup">
+                                            <a href="##">Block</a>
+                                            <a href="#">Delete</a>
+                                        </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="collapse accordion-collapse animated-collapse" id="r2" data-bs-parent=".user-accordion">
+                                    <td colspan="7" class="accordion-collapse-inner">
+                                        <table>
+                                           <thead>
+                                            <tr>
+                                                <th>Chick Type</th>
+                                                <th>What bring you here</th>
+                                                <th>I want to see</th>
+                                                <th>Match me based</th>
+                                                <th>Im looking for</th>
+                                            </tr>
+                                           </thead>
+                                           <tbody>
+                                            <tr>
+                                                <td><p>Newborn under 6 months</p></td>
+                                                <td><p>I want to see who’s up feeding when I am, just for fun.</p></td>
+                                                <td><p>Formula/Bottle feeding</p></td>
+                                                <td><p>My Age</p></td>
+                                                <td><p>Meet ups</p></td>
+                                            </tr>
+                                           </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+
+
+                                 <!-- row 3  -->
+                                 <tr data-bs-toggle="collapse" data-bs-target="#r3">
+                                    <td>
+                                        <div class="full-name">
+                                            <div class="user-img">
+                                                <img src="src/img/Mask Group 79.png" alt="">
+                                            </div>
+                                            <p>Mary Brown</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p><a href="">Mary@gmail.com</a></p>
+                                    </td>
+                                    <td>
+                                        <p>1995</p>
+                                    </td>
+                                    <td>
+                                        <p>Female</p>
+                                    </td>
+                                    <td>
+                                        <p>Spanish, English</p>
+                                    </td>
+                                    <td>
+                                        <p>Married</p>
+                                    </td>
+                                    <td>
+                                        <div class="edit-dots-wrap">
+                                        <div class="edit-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>   
+                                        </div>
+                                        <div class="edit-dots-popup">
+                                            <a href="##">Block</a>
+                                            <a href="#">Delete</a>
+                                        </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="collapse accordion-collapse animated-collapse" id="r3" data-bs-parent=".user-accordion">
+                                    <td colspan="7" class="accordion-collapse-inner">
+                                        <table>
+                                           <thead>
+                                            <tr>
+                                                <th>Chick Type</th>
+                                                <th>What bring you here</th>
+                                                <th>I want to see</th>
+                                                <th>Match me based</th>
+                                                <th>Im looking for</th>
+                                            </tr>
+                                           </thead>
+                                           <tbody>
+                                            <tr>
+                                                <td><p>Newborn under 6 months</p></td>
+                                                <td><p>I want to see who’s up feeding when I am, just for fun.</p></td>
+                                                <td><p>Formula/Bottle feeding</p></td>
+                                                <td><p>My Age</p></td>
+                                                <td><p>Meet ups</p></td>
+                                            </tr>
+                                           </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <!-- row 4  -->
+                                <tr data-bs-toggle="collapse" data-bs-target="#r4">
+                                    <td>
+                                        <div class="full-name">
+                                            <div class="user-img">
+                                                <img src="src/img/Mask Group 79.png" alt="">
+                                            </div>
+                                            <p>Mary Brown</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p><a href="">Mary@gmail.com</a></p>
+                                    </td>
+                                    <td>
+                                        <p>1995</p>
+                                    </td>
+                                    <td>
+                                        <p>Female</p>
+                                    </td>
+                                    <td>
+                                        <p>Spanish, English</p>
+                                    </td>
+                                    <td>
+                                        <p>Married</p>
+                                    </td>
+                                    <td>
+                                        <div class="edit-dots-wrap">
+                                        <div class="edit-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>   
+                                        </div>
+                                        <div class="edit-dots-popup">
+                                            <a href="##">Block</a>
+                                            <a href="#">Delete</a>
+                                        </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="collapse accordion-collapse animated-collapse" id="r4" data-bs-parent=".user-accordion">
+                                    <td colspan="7" class="accordion-collapse-inner">
+                                        <table>
+                                           <thead>
+                                            <tr>
+                                                <th>Chick Type</th>
+                                                <th>What bring you here</th>
+                                                <th>I want to see</th>
+                                                <th>Match me based</th>
+                                                <th>Im looking for</th>
+                                            </tr>
+                                           </thead>
+                                           <tbody>
+                                            <tr>
+                                                <td><p>Newborn under 6 months</p></td>
+                                                <td><p>I want to see who’s up feeding when I am, just for fun.</p></td>
+                                                <td><p>Formula/Bottle feeding</p></td>
+                                                <td><p>My Age</p></td>
+                                                <td><p>Meet ups</p></td>
+                                            </tr>
+                                           </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <!-- row 5  -->
+                                <tr data-bs-toggle="collapse" data-bs-target="#r5">
+                                    <td>
+                                        <div class="full-name">
+                                            <div class="user-img">
+                                                <img src="src/img/Mask Group 79.png" alt="">
+                                            </div>
+                                            <p>Mary Brown</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p><a href="">Mary@gmail.com</a></p>
+                                    </td>
+                                    <td>
+                                        <p>1995</p>
+                                    </td>
+                                    <td>
+                                        <p>Female</p>
+                                    </td>
+                                    <td>
+                                        <p>Spanish, English</p>
+                                    </td>
+                                    <td>
+                                        <p>Married</p>
+                                    </td>
+                                    <td>
+                                        <div class="edit-dots-wrap">
+                                        <div class="edit-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>   
+                                        </div>
+                                        <div class="edit-dots-popup">
+                                            <a href="##">Block</a>
+                                            <a href="#">Delete</a>
+                                        </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="collapse accordion-collapse animated-collapse" id="r5" data-bs-parent=".user-accordion">
+                                    <td colspan="7" class="accordion-collapse-inner">
+                                        <table>
+                                           <thead>
+                                            <tr>
+                                                <th>Chick Type</th>
+                                                <th>What bring you here</th>
+                                                <th>I want to see</th>
+                                                <th>Match me based</th>
+                                                <th>Im looking for</th>
+                                            </tr>
+                                           </thead>
+                                           <tbody>
+                                            <tr>
+                                                <td><p>Newborn under 6 months</p></td>
+                                                <td><p>I want to see who’s up feeding when I am, just for fun.</p></td>
+                                                <td><p>Formula/Bottle feeding</p></td>
+                                                <td><p>My Age</p></td>
+                                                <td><p>Meet ups</p></td>
+                                            </tr>
+                                           </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <!-- row 6  -->
+                                <tr data-bs-toggle="collapse" data-bs-target="#r6">
+                                    <td>
+                                        <div class="full-name">
+                                            <div class="user-img">
+                                                <img src="src/img/Mask Group 79.png" alt="">
+                                            </div>
+                                            <p>Mary Brown</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p><a href="">Mary@gmail.com</a></p>
+                                    </td>
+                                    <td>
+                                        <p>1995</p>
+                                    </td>
+                                    <td>
+                                        <p>Female</p>
+                                    </td>
+                                    <td>
+                                        <p>Spanish, English</p>
+                                    </td>
+                                    <td>
+                                        <p>Married</p>
+                                    </td>
+                                    <td>
+                                        <div class="edit-dots-wrap">
+                                        <div class="edit-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>   
+                                        </div>
+                                        <div class="edit-dots-popup">
+                                            <a href="##">Block</a>
+                                            <a href="#">Delete</a>
+                                        </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="collapse accordion-collapse animated-collapse" id="r6" data-bs-parent=".user-accordion">
+                                    <td colspan="7" class="accordion-collapse-inner">
+                                        <table>
+                                           <thead>
+                                            <tr>
+                                                <th>Chick Type</th>
+                                                <th>What bring you here</th>
+                                                <th>I want to see</th>
+                                                <th>Match me based</th>
+                                                <th>Im looking for</th>
+                                            </tr>
+                                           </thead>
+                                           <tbody>
+                                            <tr>
+                                                <td><p>Newborn under 6 months</p></td>
+                                                <td><p>I want to see who’s up feeding when I am, just for fun.</p></td>
+                                                <td><p>Formula/Bottle feeding</p></td>
+                                                <td><p>My Age</p></td>
+                                                <td><p>Meet ups</p></td>
+                                            </tr>
+                                           </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
