@@ -56,7 +56,9 @@
                             <img src="src/img/Light-Member.svg" alt=""></a>
                     </div>
 
-                    <div class="sidebar-link">
+                    <div class="sidebar-link" id="v-pills-inbox-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-inbox" type="button" role="tab" aria-controls="v-pills-inbox"
+                    aria-selected="false">
                         <a href="">
                             <img src="src/img/inbox.svg" alt=""></a>
                     </div>
@@ -87,7 +89,6 @@
                 </div>
             </div>
         </aside>
-
 
 
         <div class="tab-content" id="v-pills-tabContent">
@@ -1179,7 +1180,7 @@
                                             <span></span>
                                         </div>
                                         <div class="edit-dots-popup">
-                                            <a href="#">Block</a>
+                                            <a href="edit-resource.html">Edit</a>
                                             <a href="#">Delete</a>
                                         </div>
                                     </div>
@@ -1713,6 +1714,30 @@
                     </div>
                 </div>
             </div>
+
+            <!-- inbox  -->
+            <div class="inbox-tab tab-pane fade" id="v-pills-inbox" role="tabpanel"
+            aria-labelledby="v-pills-inbox-tab">
+                <div class="header">
+                    <h1>Resource management</h1>
+                </div>
+        
+                <div class="inner-main-container inbox-container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="inbox-left-container">
+                                <div class="inbox-name new-msg">
+                                    <h4>Robert Brown</h4>
+                                    <h4>21-03-2022</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="inbox-right-container"></div>
+                        </div>
+                    </div>
+                </div>
+             </div>
 
             <div class="static-content tab-pane fade" id="v-pills-static-content" role="tabpanel"
                 aria-labelledby="v-pills-static-content-tab">
