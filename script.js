@@ -37,11 +37,33 @@ $(document).ready(function() {
 
 
 // active links
+// $(document).ready(function() {
+//     $('.sidebar-inner .sidebar-link').on('click', function(e) {
+//         e.preventDefault();
+//         // $('.sidebar-link').removeClass('active-link'); // Remove 'active-link' from all links
+//         // $(this).addClass('active-link'); // Add 'active-link' to the clicked link
+//     });
+// });
+
+
+// $(document).ready(function() {
+//     $('.hamburder-bnt').click(function(e) {
+//         e.preventDefault();
+//         $('body').toggleClass('nav-show');
+//     });
+// });
+
+
 $(document).ready(function() {
-    $('.sidebar-inner .sidebar-link').on('click', function(e) {
+    $('.hamburder-bnt').click(function(e) {
         e.preventDefault();
-        // $('.sidebar-link').removeClass('active-link'); // Remove 'active-link' from all links
-        // $(this).addClass('active-link'); // Add 'active-link' to the clicked link
+        $('body').toggleClass('nav-show');
+    });
+
+    // Close sidebar when clicking outside
+    $(document).click(function(e) {
+        if ($('body').hasClass('nav-show') && !$(e.target).closest('.sidebar, .hamburder-bnt').length) {
+            $('body').removeClass('nav-show');
+        }
     });
 });
-
