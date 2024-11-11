@@ -343,9 +343,8 @@ textarea {
 
 .main-container {
   margin-top: 115px;
+  padding-bottom: 20px;
 }
-
-
 
 .header .header-filter-wrapper .filter-text {
   display: flex;
@@ -377,7 +376,7 @@ select:focus {
 
 .header .header-filter-wrapper select {
   font-weight: 600;
-  padding-right: 15px;
+  padding: 0 15px;
 }
 
 .header .header-filter-wrapper .filter-select-wrapper {
@@ -704,6 +703,11 @@ td {
   gap: 23px 13px;
 }
 
+/* .resource-management .resource-card-wrapper {
+  height: calc(100vh - 225px);
+  overflow-y: auto;
+} */
+
 .resource-card {
   display: flex;
   flex-direction: column;
@@ -1003,6 +1007,8 @@ td {
 .inbox-right-container input::placeholder {
   color: #2b361c;
 }
+
+
 
 .resource-management .resource-img {
   height: 232px;
@@ -1353,6 +1359,7 @@ td {
 
   .main-container {
     margin-top: 95px;
+    padding-bottom: 10px;
   }
 
   .main-container.dashboard {
@@ -1380,7 +1387,7 @@ td {
   }
 
   .user-accordion-section .user-accordion {
-    height: calc(100vh - 230px);
+    height: calc(100vh - 213px);
     padding-right: 25px;
   }
 
@@ -1419,7 +1426,10 @@ td {
 
   .inbox-left-container {
     padding: 25px;
-    height: calc(50vh - 100px);
+    height: calc(100vh - 106px);
+  }
+  .inbox-right-container {
+    height: calc(100vh - 106px);
   }
   
   .inbox-name h4 {
@@ -1465,6 +1475,8 @@ td {
 
   .main-container {
     margin-top: 85px;
+    padding-bottom: 10px;
+
   }
 
   .sidebar {
@@ -1537,6 +1549,7 @@ td {
 
   .user-accordion-section .user-accordion {
     padding-right: 20px;
+    height: calc(100vh - 213px);
   }
 
   .resource-management .edit-resource-left h3 {
@@ -1605,6 +1618,10 @@ td {
 
 .content-left {
   padding-right: 15px;
+}
+
+.main-container {
+  padding-bottom: 10px;
 }
 
 }
@@ -1782,6 +1799,10 @@ td {
 .btn.btn-submit {
   font-size: 18px;
   margin-top: 15px;
+}
+
+.user-accordion-section .user-accordion {
+  height: calc(100vh - 208px);
 }
 
 }
