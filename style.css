@@ -747,6 +747,17 @@ td {
   gap: 10px;
 }
 
+.resource-card .resource-title h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.resource-card .resource-title h3 svg tspan {
+  text-transform: lowercase;
+}
+
 .resource-title .edit-dots-wrap {
   padding-right: 0;
   margin-right: 0;

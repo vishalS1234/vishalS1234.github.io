@@ -142,7 +142,25 @@
                         </div>
 
                         <div class="resource-title">
-                            <h3>Article title</h3>
+                            <h3>Article title
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                        viewBox="0 0 15 15">
+                                        <g id="Group_3596" data-name="Group 3596" transform="translate(-280 -417)">
+                                            <g id="Rectangle_4562" data-name="Rectangle 4562"
+                                                transform="translate(280 417)" fill="none" stroke="#cb0037"
+                                                stroke-width="0.5" opacity="0.996">
+                                                <rect width="15" height="15" rx="7.5" stroke="none" />
+                                                <rect x="0.25" y="0.25" width="14.5" height="14.5" rx="7.25"
+                                                    fill="none" />
+                                            </g>
+                                            <text id="I" transform="translate(286 417)" fill="#cb0037" font-size="10"
+                                                font-family="SegoeUI, Segoe UI" letter-spacing="0.04em">
+                                                <tspan x="0" y="11">i</tspan>
+                                            </text>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </h3>
                             <div class="edit-dots-wrap">
                                 <div class="edit-dots">
                                     <span></span>
@@ -669,69 +687,69 @@
             </div>
         </div>
     </div>
-    
 
-        <div class="overlay"></div>
 
-  
-        <div class="popup-wrapper" id="myModal" tabindex="-1">
-            <div class="add-resources-popup">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Add new resource</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="myModal" aria-label="Close"></button>
+    <div class="overlay"></div>
+
+
+    <div class="popup-wrapper" id="myModal" tabindex="-1">
+        <div class="add-resources-popup">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add new resource</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="myModal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="resource-title">
+                                    <input type="text" name="" id="" placeholder="Article Title">
+                                </div>
+                            </div>
                         </div>
-                        <div class="modal-body">
+                        <div class="resource-check-and-popup">
                             <div class="row">
-                                <div class="col-12">
-                                    <div class="resource-title">
-                                        <input type="text" name="" id="" placeholder="Article Title">
+                                <div class="col-12 py-2 col-sm-6">
+                                    <div class="resource-check-wrap">
+                                        <label for="resource-content">
+                                            <input type="checkbox" name="" id="resource-content">
+                                            Sensitive Content
+                                        </label>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="resource-check-and-popup">
-                                <div class="row">
-                                    <div class="col-12 py-2 col-sm-6">
-                                        <div class="resource-check-wrap">
-                                            <label for="resource-content">
-                                                <input type="checkbox" name="" id="resource-content">
-                                                Sensitive Content
-                                            </label>
-                                        </div>
+                                <div class="col-12 py-2 col-sm-6">
+                                    <div class="resource-select">
+                                        <select name="" id="">
+                                            <option value="">Choose Category</option>
+                                            <option value="">Choose Category</option>
+                                            <option value="">Choose Category</option>
+                                        </select>
                                     </div>
-                                    <div class="col-12 py-2 col-sm-6">
-                                        <div class="resource-select">
-                                            <select name="" id="">
-                                                <option value="">Choose Category</option>
-                                                <option value="">Choose Category</option>
-                                                <option value="">Choose Category</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="co-12">
-                                        <div class="resource-content">
-                                            <textarea name="" id="" placeholder="Content .."></textarea>
-                                        </div>
+                                </div>
+                                <div class="co-12">
+                                    <div class="resource-content">
+                                        <textarea name="" id="" placeholder="Content .."></textarea>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer py-2">
-                            <button type="button" class="btn btn-popup" data-dismiss="myModal">UPLOAD</button>
-                        </div>
+                    </div>
+                    <div class="modal-footer py-2">
+                        <button type="button" class="btn btn-popup" data-dismiss="myModal">UPLOAD</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
     <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script> -->
     <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
