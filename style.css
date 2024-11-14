@@ -279,7 +279,7 @@ textarea {
   position: fixed;
   margin-left: 100px;
   background-color: #fff;
-  z-index: 9;
+  z-index: 4;
   top: 0;
   right: 0;
 }
@@ -321,7 +321,7 @@ textarea {
 .nav-show .overlay {
   width: 100%;
   height: 100%;
-  z-index: 3;
+  z-index: 5;
 }
 
 .header .header-right {
