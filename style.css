@@ -366,7 +366,6 @@ textarea {
 }
 
 select {
-  -webkit-animation: none;
   appearance: none;
   background-color: transparent;
   border: none;
