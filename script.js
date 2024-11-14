@@ -18,7 +18,6 @@ $(document).ready(function() {
 });
 
 
-
 $(document).ready(function() {
     $('.edit-dots').click(function(e) {
         e.stopPropagation(); // Prevents the accordion from opening
@@ -36,24 +35,6 @@ $(document).ready(function() {
 });
 
 
-// active links
-// $(document).ready(function() {
-//     $('.sidebar-inner .sidebar-link').on('click', function(e) {
-//         e.preventDefault();
-//         // $('.sidebar-link').removeClass('active-link'); // Remove 'active-link' from all links
-//         // $(this).addClass('active-link'); // Add 'active-link' to the clicked link
-//     });
-// });
-
-
-// $(document).ready(function() {
-//     $('.hamburder-bnt').click(function(e) {
-//         e.preventDefault();
-//         $('body').toggleClass('nav-show');
-//     });
-// });
-
-
 $(document).ready(function() {
     $('.hamburder-bnt').click(function(e) {
         e.preventDefault();
@@ -67,3 +48,4 @@ $(document).ready(function() {
         }
     });
 });
+
