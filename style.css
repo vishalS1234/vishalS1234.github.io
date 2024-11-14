@@ -1326,9 +1326,13 @@ td {
 }
 
 .content-left {
-  height: calc(100vh - 180px);
+  height: calc(100vh - 210px);
   overflow-y: scroll;
   padding-right: 20px;
+}
+
+.faq-wrapper .content-right {
+  height: calc(100vh - 210px);
 }
 
 .faq-wrapper .content-left,
@@ -1358,7 +1362,7 @@ td {
   padding-top: 20px;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .faq-accordion .accordion-item:first-child .faq-heading-wrapper {
