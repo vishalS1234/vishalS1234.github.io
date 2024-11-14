@@ -279,7 +279,7 @@ textarea {
   position: fixed;
   margin-left: 100px;
   background-color: #fff;
-  z-index: 2;
+  z-index: 9;
   top: 0;
   right: 0;
 }
@@ -1973,6 +1973,10 @@ td {
   .custom-date-input[data-placeholder]:empty::before {
     left: 20px;
   }  
+
+  .faq-wrapper .faq-right {
+    height: 100%;
+  }
 }
 
 @media (max-width: 480px) {
