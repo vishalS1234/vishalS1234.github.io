@@ -41,7 +41,6 @@ $(document).ready(function() {
         $('body').toggleClass('nav-show');
     });
 
-    // Close sidebar when clicking outside
     $(document).click(function(e) {
         if ($('body').hasClass('nav-show') && !$(e.target).closest('.sidebar, .hamburder-bnt').length) {
             $('body').removeClass('nav-show');
