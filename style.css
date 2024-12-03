@@ -271,7 +271,6 @@ textarea {
 /* header  */
 .header {
   width: 100%;
-  margin-left: 100px;
   display: flex;
   justify-content: space-between;
   padding: 30px 20px;
@@ -330,6 +329,7 @@ textarea {
   justify-content: space-between;
   gap: 20px;
   align-items: center;
+  padding: 0 20px;
 }
 
 .header h1 {
@@ -356,7 +356,7 @@ textarea {
 }
 
 .main-container {
-  margin-top: 115px;
+  margin-top: 116px;
   padding-bottom: 20px;
 }
 
@@ -422,7 +422,7 @@ select:focus {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 /* inner top  */
@@ -519,18 +519,17 @@ select:focus {
   align-items: center;
 }
 
-/* .card-text-content-wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-} */
-
 .card-text-content {
-  /* padding: 10px 0; */
   display: flex;
   gap: 8px;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.card-text-content .card-user-container {
+  max-width: 125px;
+  width: 100%;
+  text-align: right;
 }
 
 .card-text-content p {
@@ -567,7 +566,7 @@ select:focus {
 }
 
 .inner-container .content-card {
-  padding: 15px 26px;
+  padding: 19px 26px;
 }
 
 .content-card,
@@ -954,7 +953,7 @@ td {
 }
 
 .add-resources-popup .resource-check-and-popup {
-  padding-top: 17px;
+  padding-top: 23px;
 }
 
 .add-resources-popup .resource-check-and-popup .resource-content {
@@ -971,8 +970,8 @@ td {
   color: #edf4f4;
 }
 
-.add-resources-popup .resource-title input,
-.add-resources-popup .resource-check-and-popup select,
+.add-resources-popup .resource-title textarea,
+.add-resources-popup select,
 .add-resources-popup .resource-content textarea,
 .inbox-right-container input,
 .inbox-right-container textarea,
@@ -988,6 +987,60 @@ td {
   border: none;
 }
 
+.add-resources-popup .resource-title textarea {
+  max-width: 330px;
+  width: 100%;
+  min-height: 103px;
+  resize: none;
+}
+
+.add-resources-popup select {
+  max-width: 330px;
+}
+
+.add-resources-popup .resource-title textarea::placeholder {
+  color: #2B361C;
+}
+
+.add-resources-popup .resource-select {
+  position: relative;
+  max-width: 330px;
+  margin-top: 21px;
+}
+
+.add-resources-popup .upload-photo {
+  height: 244px;
+}
+
+.add-resources-popup .upload-photo label {
+  display: flex;
+  background-color: #fef5dd;
+  border-radius: 10px;
+  border: 1px solid #86c6b4;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 244px;
+}
+
+.add-resources-popup .upload-photo label span.add-btn {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #13313c;
+  font-size: 36px;
+  font-weight: 700;
+  color: #f4fafd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-resources-popup .upload-photo input {
+  display: none;
+}
+
 .add-resources-popup .resource-content textarea,
 .inbox-right-container textarea,
 .faq-right textarea {
@@ -998,6 +1051,7 @@ td {
 
 .add-resources-popup .resource-content textarea {
   min-height: 260px;
+  resize: none;
 }
 
 .inbox-right-container textarea {
@@ -1022,7 +1076,7 @@ td {
 }
 
 .resource-check-wrap {
-  height: 100%;
+  margin-top: 38px;
 }
 
 .resource-check-wrap label {
@@ -1035,6 +1089,7 @@ td {
   font-size: 16px;
   line-height: 21px;
   padding-left: 67px;
+  min-height: 40px;
 }
 
 .resource-check-wrap label::before {
@@ -1100,6 +1155,7 @@ td {
   font-weight: 700;
   color: #2a333e;
   margin-bottom: 6px;
+  text-transform: uppercase;
 }
 
 .resource-management .edit-resource-left h3 span {
@@ -1217,9 +1273,6 @@ td {
   z-index: 1;
 }
 
-.add-resources-popup .resource-select {
-  position: relative;
-}
 
 .add-resources-popup .resource-select::after {
   content: "";
@@ -1556,7 +1609,7 @@ td {
   }
 
   .add-resources-popup .resource-title input,
-  .add-resources-popup .resource-check-and-popup select,
+  .add-resources-popup select,
   .add-resources-popup .resource-content textarea,
   .inbox-right-container input,
   .inbox-right-container textarea,
@@ -1579,6 +1632,10 @@ td {
 
   .custom-date-input[data-placeholder]:empty::before {
     left: 20px;
+  }
+
+  .header .header-right {
+    padding: unset;
   }
 }
 
@@ -1693,7 +1750,7 @@ td {
   }
 
   .add-resources-popup .resource-title input,
-  .add-resources-popup .resource-check-and-popup select,
+  .add-resources-popup select,
   .add-resources-popup .resource-content textarea,
   .inbox-right-container input,
   .inbox-right-container textarea,
@@ -1779,7 +1836,7 @@ td {
 
   .custom-date-input[data-placeholder]:empty::before {
     left: 25px;
-  } 
+  }
 }
 
 @media (max-width: 576px) {
@@ -1925,7 +1982,7 @@ td {
   }
 
   .add-resources-popup .resource-title input,
-  .add-resources-popup .resource-check-and-popup select,
+  .add-resources-popup select,
   .add-resources-popup .resource-content textarea,
   .inbox-right-container input,
   .inbox-right-container textarea,
@@ -1968,6 +2025,12 @@ td {
 
   .add-resources-popup .resource-select {
     margin-top: 10px;
+    max-width: 100%;
+  }
+
+  .add-resources-popup .resource-select select {
+    max-width: 100%;
+    min-height: 53px;
   }
 
   .resource-check-wrap {
@@ -1976,10 +2039,22 @@ td {
 
   .custom-date-input[data-placeholder]:empty::before {
     left: 20px;
-  }  
+  }
 
   .faq-wrapper .faq-right {
     height: 100%;
+  }
+
+  .add-resources-popup .resource-title textarea {
+    max-width: 100%;
+  }
+
+  .add-resources-popup .upload-photo {
+    padding-top: 20px;
+  }
+
+  .add-resources-popup .upload-photo label {
+    min-height: unset;
   }
 }
 
