@@ -590,6 +590,21 @@ select:focus {
   padding-right: 40px;
 }
 
+.user-accordion-section .user-accordion .table-responsive {
+  overflow-x: unset;
+}
+
+.user-accordion-section .user-accordion .table-responsive::-webkit-scrollbar {
+  height: 0;
+}
+
+.user-accordion thead {
+  position: sticky;
+  top: 0;
+  background-color: #fff; 
+  z-index: 2; 
+}
+
 .user-accordion table {
   min-width: 750px;
   width: 100%;
