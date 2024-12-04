@@ -569,11 +569,16 @@ select:focus {
   flex: 1 1 calc(50% - 16px);
 }
 
+.user-management {
+  padding-top: 10px;
+}
+
 .content-card,
 .user-accordion-section {
   border: 1px solid #2377bd;
   border-radius: 15px;
 }
+
 
 .user-accordion-section {
   padding: 30px 33px 30px 50px;
@@ -737,6 +742,10 @@ td {
   overflow-y: auto;
 } */
 
+.inner-main-container .resource-management {
+  padding-top: 10px;
+}
+
 .resource-card {
   display: flex;
   flex-direction: column;
@@ -879,6 +888,7 @@ td {
   font-size: 14px;
   line-height: 19px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .animated-collapse {
@@ -968,6 +978,7 @@ td {
   font-size: 22px;
   line-height: 30px;
   color: #edf4f4;
+  text-transform: uppercase;
 }
 
 .add-resources-popup .resource-title textarea,
@@ -988,28 +999,26 @@ td {
 }
 
 .add-resources-popup .resource-title textarea {
-  max-width: 330px;
   width: 100%;
-  min-height: 103px;
+  /* min-height: 103px; */
   resize: none;
 }
 
-.add-resources-popup select {
-  max-width: 330px;
-}
-
-.add-resources-popup .resource-title textarea::placeholder {
+.add-resources-popup .resource-title textarea::placeholder, .add-resources-popup .resource-content textarea::placeholder {
   color: #2B361C;
 }
 
 .add-resources-popup .resource-select {
   position: relative;
-  max-width: 330px;
   margin-top: 21px;
 }
 
+.add-resources-popup .col-12 {
+  padding: 0 10px;
+}
+
 .add-resources-popup .upload-photo {
-  height: 244px;
+  height: 100%;
 }
 
 .add-resources-popup .upload-photo label {
@@ -1021,7 +1030,7 @@ td {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 244px;
+  /* min-height: 244px; */
 }
 
 .add-resources-popup .upload-photo label span.add-btn {
@@ -1050,7 +1059,7 @@ td {
 }
 
 .add-resources-popup .resource-content textarea {
-  min-height: 260px;
+  min-height: 180px;
   resize: none;
 }
 
@@ -1062,10 +1071,12 @@ td {
   height: 100%;
 }
 
+
 .faq-right textarea:first-child {
   height: 90px;
   min-height: unset;
 }
+
 
 .add-resources-popup .modal-header .btn-close {
   position: absolute;
@@ -1123,7 +1134,7 @@ td {
 }
 
 .resource-check-wrap label input::placeholder,
-.inbox-right-container input::placeholder {
+.inbox-right-container input::placeholder, .faq-right textarea::placeholder {
   color: #2b361c;
 }
 
@@ -1364,6 +1375,7 @@ td {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .btn-submit:hover {
@@ -1398,7 +1410,8 @@ td {
 }
 
 .faq-search {
-  max-width: 553px;
+  /* max-width: 553px; */
+  padding-right: 25px;
   width: 100%;
 }
 
@@ -1486,7 +1499,7 @@ td {
   display: flex;
   gap: 20px;
   flex-direction: column;
-  height: calc(100vh - 180px);
+  height: calc(100vh - 210px);
 }
 
 .faq-right textarea:last-of-type {
@@ -2035,6 +2048,7 @@ td {
 
   .resource-check-wrap {
     min-height: 44px;
+    margin-top: 20px;
   }
 
   .custom-date-input[data-placeholder]:empty::before {
@@ -2051,6 +2065,7 @@ td {
 
   .add-resources-popup .upload-photo {
     padding-top: 20px;
+    min-height: 150px;
   }
 
   .add-resources-popup .upload-photo label {
