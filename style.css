@@ -415,7 +415,6 @@ select:focus {
 }
 
 /* inner container */
-
 .inner-main-container {
   width: calc(100% - 100px);
   margin-left: auto;
@@ -1575,10 +1574,6 @@ td {
 
   .inner-top-container {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .inner-container {
-    /* grid-template: repeat(1, 1fr) / repeat(1, 1fr); */
   }
 
   .content-card h2,
