@@ -560,13 +560,14 @@ select:focus {
 
 .inner-container {
   width: 100%;
-  display: grid;
-  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .inner-container .content-card {
   padding: 19px 26px;
+  flex: 1 1 calc(50% - 16px);
 }
 
 .content-card,
@@ -1577,7 +1578,7 @@ td {
   }
 
   .inner-container {
-    grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+    /* grid-template: repeat(1, 1fr) / repeat(1, 1fr); */
   }
 
   .content-card h2,
@@ -1636,6 +1637,10 @@ td {
 
   .header .header-right {
     padding: unset;
+  }
+
+  .inner-container .content-card {
+    flex: 1 1 100%;
   }
 }
 
