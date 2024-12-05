@@ -692,12 +692,17 @@ td {
   z-index: 1;
 }
 
-.edit-dots-popup a {
+.edit-dots-popup a, .edit-dots-popup p {
   font-size: 13px;
   line-height: 17px !important;
   color: #ffffff !important;
   text-decoration: none;
 }
+
+.edit-dots-popup p {
+  cursor: pointer;
+}
+
 
 .edit-dots span {
   width: 5px;
@@ -805,6 +810,12 @@ td {
   justify-content: center;
   align-items: center;
   gap: 7px;
+  color: #2A333E;
+}
+
+.resource-card .resource-title h3 a {
+  color: #2A333E;
+  text-decoration: none;
 }
 
 .resource-card .resource-title h3 span {
